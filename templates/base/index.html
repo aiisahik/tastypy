@@ -1,0 +1,16 @@
+{% load mustache %}{% load straight_include %}
+<!doctype html>
+<html lang="en">
+  <head>
+  	{% include "base/header.html" %}
+  </head>
+  <body>
+  	{% include "base/navbar.html" %}
+  	{% block main %}
+  	{% endblock %}
+  </body>
+  	{% block js %}
+	{% endblock %}
+	{% block templates %}
+	{% endblock %}
+</html>
